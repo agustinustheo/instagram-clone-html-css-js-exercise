@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div>
+        <div>
+            <!-- Instagram -->
+            <img src="assets/img/instagram.png">
+        </div>
+        <div>
+            <!-- Input search -->
+            <input type="text" placeholder="Search">
+        </div>
+        <div>
+            <!-- 4 elements and a photo -->
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div class="img-wrapper">
+                <img src="assets/img/theo.jpg">
+                <div class="profile-settings">
+                    <div>Profile</div>
+                    <div>Settings</div>
+                    <div>Navigation</div>
+                    <hr>
+                    <div>Log Out</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="header">
+            <span id="goleft">&lt;</span>
+            <span id="goright">&gt;</span>
+            <div id="header-profile-container">
+                <div>
+                    <div class="img-wrapper">
+                        <img src="assets/img/theo.jpg">
+                    </div>
+                    <div>agustinustheoo</div>
+                </div>
+                <div>
+                    <div class="img-wrapper">
+                        <img src="assets/img/theo.jpg">
+                    </div>
+                    <div>agustinustheoo</div>
+                </div>
+                <div>
+                    <div class="img-wrapper">
+                        <img src="assets/img/theo.jpg">
+                    </div>
+                    <div>agustinustheoo</div>
+                </div>
+                <div>
+                    <div class="img-wrapper">
+                        <img src="assets/img/theo.jpg">
+                    </div>
+                    <div>agustinustheoo</div>
+                </div>
+                <div>
+                    <div class="img-wrapper">
+                        <img src="assets/img/theo.jpg">
+                    </div>
+                    <div>agustinustheoo</div>
+                </div>
+                <div>
+                    <div class="img-wrapper">
+                        <img src="assets/img/theo.jpg">
+                    </div>
+                    <div>agustinustheoo</div>
+                </div>
+                <div>
+                    <div class="img-wrapper">
+                        <img src="assets/img/theo.jpg">
+                    </div>
+                    <div>agustinustheoo</div>
+                </div>
+                <div>
+                    <div class="img-wrapper">
+                        <img src="assets/img/theo.jpg">
+                    </div>
+                    <div>agustinustheoo</div>
+                </div>
+                <div>
+                    <div class="img-wrapper">
+                        <img src="assets/img/theo.jpg">
+                    </div>
+                    <div>agustinustheoo</div>
+                </div>
+                <div>
+                    <div class="img-wrapper">
+                        <img src="assets/img/theo.jpg">
+                    </div>
+                    <div>agustinustheoo</div>
+                </div>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post">
+                <div class="post-header">
+                    <div class="user-info">
+                        <div class="img-wrapper">
+                            <img src="assets/img/theo.jpg">
+                        </div>
+                        <div>agustinustheoo</div>
+                    </div>
+                    <button>Side Button</button>
+                </div>
+                <div class="post-img">
+                    <img src="assets/img/giraffe.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var counter = 0;
+        var goright = document.getElementById('goright');
+        var goleft = document.getElementById('goleft');
+        var headerContainer = document.getElementById('header-profile-container');
+
+        goright.onclick = function(){
+            counter-=100;
+            headerContainer.style.transform = "translate(" + counter + "px)";
+        }
+
+        goleft.onclick = function(){
+            counter+=100;
+            headerContainer.style.transform = "translate(" + counter + "px)";
+        }
+    </script>
+</body>
+</html>
